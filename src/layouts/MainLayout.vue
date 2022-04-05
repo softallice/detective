@@ -3,8 +3,7 @@
     view="lHh Lpr lFf"
     :class="{ 'ios-browser-swiping-back' : store.state.iosBrowserSwipingBack }"
   >
-  {{useFooter}}
-    <q-footer v-if="route.name !== 'Login'"
+    <q-footer v-if="route.name !== 'Login' && route.name !== 'Chat' && route.name !== 'ConnectChat'"
       bordered 
       class="bg-white text-primary">
       <q-tabs

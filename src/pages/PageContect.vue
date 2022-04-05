@@ -4,7 +4,7 @@
             <template #title>대화리스트</template>
         </page-header>
         <page-body>
-            <div class="q-pa-md" style="max-width: 350px">
+            <div class="full-width">
 
                 <q-list>
                 <q-item 

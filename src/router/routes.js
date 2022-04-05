@@ -5,7 +5,7 @@ const routes = [
     children: [
       { path: '', redirect: '/user' },
       { path: '/user', component: () => import('pages/PageUsers.vue') },
-      { path: '/chat', component: () => import('pages/PageChat.vue') },
+      { path: '/chat', name: 'Chat', component: () => import('pages/PageChat.vue') },
       { path: '/auth', component: () => import('pages/PageAuth.vue') },
       { path: '/login', name: 'Login' , component: () => import('pages/PageLogin.vue') },
       { path: '/account', component: () => import('pages/PageAccount.vue') },
@@ -17,6 +17,7 @@ const routes = [
         children: [
           {
             path: '/contect/chat',
+            name: 'ConnectChat',
             component: () => import('pages/PageChat.vue'),
           }
         ]
