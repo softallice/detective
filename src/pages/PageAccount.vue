@@ -56,26 +56,9 @@
   </page>
 </template>
 <script>
-import { ref  } from 'vue'
-import { useQuasar} from 'quasar'
 export default {
     setup() {
-        const $q = useQuasar()
-        
-        const darkMode = ref(null)
-
-        return {
-            
-            localeOptions: [
-                { value: 'en-US', label: 'English' },
-                { value: 'ko', label: 'Korean' }
-            ],
-            check2: ref(false),
-            check3: ref(false),
-
-            notif1: ref(true),
-            notif2: ref(true),
-            notif3: ref(false),
+        return { 
 
         }
     },
